@@ -23,7 +23,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --windowed --name "Freestyle Rap Simulator" main.py
+          pyinstaller --onefile --windowed --icon=freestyle_icon.ico --name "Freestyle Rap Simulator" main.py
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
